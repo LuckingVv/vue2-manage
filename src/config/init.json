@@ -1,0 +1,102 @@
+{
+  "menuData": [{
+      "name": "首页",
+      "link": "/home",
+      "key": "home",
+      "iconClass": "el-icon-menu"
+    },
+    {
+      "name": "数据管理",
+      "link": "",
+      "key": "data",
+      "iconClass": "el-icon-document",
+      "children": [{
+          "name": "用户列表",
+          "link": "/userList",
+          "key": "userList"
+        },
+        {
+          "name": "商家列表",
+          "link": "/shopList",
+          "key": "shopList"
+        },
+        {
+          "name": "食品列表",
+          "link": "/foodList",
+          "key": "foodList"
+        },
+        {
+          "name": "订单列表",
+          "link": "/orderList",
+          "key": "orderList"
+        },
+        {
+          "name": "管理员列表",
+          "link": "/adminList",
+          "key": "adminList"
+        }
+      ]
+    },
+    {
+      "name": "添加数据",
+      "link": "",
+      "key": "add",
+      "iconClass": "el-icon-plus",
+      "children": [{
+          "name": "添加商铺",
+          "link": "/addShop",
+          "key": "addShop"
+        },
+        {
+          "name": "添加商品",
+          "link": "/addGoods",
+          "key": "addGoods"
+        }
+      ]
+    },
+    {
+      "name": "图表",
+      "link": "",
+      "key": "chart",
+      "iconClass": "el-icon-star-on",
+      "children": [{
+        "name": "用户分布",
+        "link": "/visitor",
+        "key": "visitor"
+      }]
+    },
+    {
+      "name": "编辑",
+      "link": "",
+      "key": "edit",
+      "iconClass": "el-icon-edit",
+      "children": [{
+        "name": "文本编辑",
+        "link": "/vueEdit",
+        "key": "vueEdit"
+      }]
+    },
+    {
+      "name": "设置",
+      "link": "",
+      "key": "set",
+      "iconClass": "el-icon-setting",
+      "children": [{
+        "name": "管理员设置",
+        "link": "/adminSet",
+        "key": "adminSet"
+      }]
+    },
+    {
+      "name": "说明",
+      "link": "",
+      "key": "explain",
+      "iconClass": "el-icon-warning",
+      "children": [{
+        "name": "说明",
+        "link": "/explain",
+        "key": "explain"
+      }]
+    }
+  ]
+}

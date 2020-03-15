@@ -37,7 +37,7 @@ const routes = [{
     path: '/userList',
     name: 'userList',
     component: userList,
-    meta: ['数据管理', '用户列表']
+    meta: {'navInfo': ['数据管理', '用户列表']}
     // }, {
     //   path: '/shopList',
     //   component: shopList,
@@ -94,11 +94,19 @@ const routes = [{
     path: '*',
     component: NotFound
   }
-
   ]
 }
 ]
+// const scrollBehavior = function (to, from, savedPosition) {
+//   if (savedPosition) {
+//     return savedPosition
+//   } else {
+//     // 如果不是通过上述行为切换组件，就会让页面回到顶部
+//     return to.meta
+//   }
+// }
 export default new Router({
-  mode: 'hash',
+  mode: 'history',
+  // scrollBehavior,
   routes
 })

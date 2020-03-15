@@ -5,7 +5,9 @@
   >
     <headTop></headTop>
     <transition name="fade" mode="out-in">
-      <router-view></router-view>
+      <keep-alive>
+        <router-view></router-view>
+      </keep-alive>
     </transition>
   </div>
 </template>
@@ -46,8 +48,9 @@ export default {
   left: 65px;
 }
 
-.fade-enter-active, .fade-leave-active {
-  transition: transform .8s, opacity .8s;
+.fade-enter-active,
+.fade-leave-active {
+  transition: transform 0.8s, opacity 0.8s;
 }
 .fade-enter {
   transform: translateX(-40px);
